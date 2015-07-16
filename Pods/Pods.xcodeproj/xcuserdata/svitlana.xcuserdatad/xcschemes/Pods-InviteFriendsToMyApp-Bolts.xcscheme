@@ -14,7 +14,7 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "50CD4906CE656DDA9AA25B53"
+               BlueprintIdentifier = "519D99913110C4F2BE3752EE"
                BuildableName = "libPods-InviteFriendsToMyApp-Bolts.a"
                BlueprintName = "Pods-InviteFriendsToMyApp-Bolts"
                ReferencedContainer = "container:Pods.xcodeproj">

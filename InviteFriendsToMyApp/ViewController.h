@@ -18,11 +18,14 @@
 @property (weak, nonatomic) IBOutlet UIButton *inviteFriends;
 @property (weak, nonatomic) NSString *userId;
 
+
 - (IBAction)loginAction:(id)sender;
 - (IBAction)sendMessagesToFriends:(id)sender;
 
 - (void)appInviteDialog:(FBSDKAppInviteDialog *)appInviteDialog didCompleteWithResults:(NSDictionary *)results;
 - (void)appInviteDialog:(FBSDKAppInviteDialog *)appInviteDialog didFailWithError:(NSError *)error;
 
+
+//- (IBAction)inviteTapped:(id)sender;
 @end
 

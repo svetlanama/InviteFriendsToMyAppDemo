@@ -21,20 +21,42 @@
 	<key>CFBundleURLTypes</key>
 	<array>
 		<dict>
+			<key>CFBundleTypeRole</key>
+			<string>Editor</string>
+			<key>CFBundleURLName</key>
+			<string>google</string>
+			<key>CFBundleURLSchemes</key>
+			<array>
+				<string>com.googleusercontent.apps.1006659314603-o0lb2dcjb0d2ijm9ge0hele7e5eklutu</string>
+			</array>
+		</dict>
+		<dict>
 			<key>CFBundleURLSchemes</key>
 			<array>
 				<string>fb425766514263120</string>
 			</array>
 		</dict>
+		<dict>
+			<key>CFBundleTypeRole</key>
+			<string>Editor</string>
+			<key>CFBundleURLSchemes</key>
+			<array>
+				<string>glory.InviteFriendsToMyApp</string>
+			</array>
+		</dict>
 	</array>
 	<key>CFBundleVersion</key>
 	<string>1</string>
+	<key>CLIENT_ID</key>
+	<string>154796906215-g99nkcq96d1vj01d19tect2fr6sp1b34.apps.googleusercontent.com</string>
 	<key>FacebookAppID</key>
 	<string>425766514263120</string>
 	<key>FacebookDisplayName</key>
 	<string>Demo Invite My Friends</string>
 	<key>LSRequiresIPhoneOS</key>
 	<true/>
+	<key>REVERSED_CLIENT_ID</key>
+	<string>com.googleusercontent.apps.154796906215-g99nkcq96d1vj01d19tect2fr6sp1b34</string>
 	<key>UILaunchStoryboardName</key>
 	<string>LaunchScreen</string>
 	<key>UIMainStoryboardFile</key>

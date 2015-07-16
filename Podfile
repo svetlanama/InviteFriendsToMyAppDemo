@@ -2,7 +2,7 @@
 # platform :ios, '6.0'
 
 target 'InviteFriendsToMyApp' do
-   pod "Facebook-iOS-SDK"
+   pod 'Facebook-iOS-SDK'
 end
 
 target 'InviteFriendsToMyAppTests' do

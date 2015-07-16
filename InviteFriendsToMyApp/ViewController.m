@@ -15,10 +15,11 @@
 @implementation ViewController
 
 
+// Facebook
 - (IBAction)loginAction:(id)sender{
     
-    
     FBSDKLoginManager *login = [[FBSDKLoginManager alloc] init];
+    
     [login logInWithReadPermissions:@[@"email", @"public_profile", @"user_friends",@"read_stream"] handler:^(FBSDKLoginManagerLoginResult *result, NSError *error) {
         if (error) {
             // Process error
@@ -28,8 +29,6 @@
             // If you ask for multiple permissions at once, you
             // should check if specific permissions missing
             if ([result.grantedPermissions containsObject:@"email"]) {
-                // Do work
-                NSLog(@"result %@=",result);
                 [self getUser];
             }
             if ([result.grantedPermissions containsObject:@"user_friends"]) {
@@ -37,8 +36,11 @@
             }
         }
     }];
+}
 
-    
+- (void)viewDidLoad {
+    [super viewDidLoad];
+    // Do any additional setup after loading the view, typically from a nib.
 }
 
 - (void) getUser {
@@ -51,10 +53,9 @@
              self.userId = result[@"id"];
          }
      }];
- 
-
 }
 
+// Share message
 - (IBAction) sendMessagesToFriends:(id)sender {
     
     FBSDKShareLinkContent *content = [[FBSDKShareLinkContent alloc] init];
@@ -63,32 +64,23 @@
     [FBSDKShareDialog showFromViewController:self
                                  withContent:content
                                     delegate:nil];
-    
-   
-    self.messageButton.shareContent = content;
- 
 
+    self.messageButton.shareContent = content;
 }
 
+// Send invitation to my friends
 - (IBAction) inviteFriends:(id)sender {
     
     FBSDKAppInviteContent *content =[[FBSDKAppInviteContent alloc] init];
-    content.appLinkURL = [NSURL URLWithString:@"https://fb.me/426026357570469"];
-
+    content.appLinkURL = [NSURL URLWithString:@"https://fb.me/426026357570469"]; //deeplink
+    
     //optionally set previewImageURL
     //content.previewImageURL = [NSURL URLWithString:@"https://www.mydomain.com/my_invite_image.jpg"];
-    
-    // present the dialog. Assumes self implements protocol `FBSDKAppInviteDialogDelegate`
     [FBSDKAppInviteDialog showWithContent:content
-                                 delegate:self]; 
+                                 delegate:self];
 }
 
-- (void)viewDidLoad {
-    [super viewDidLoad];
-    // Do any additional setup after loading the view, typically from a nib.
-}
-
- 
+// FB delegates
 - (void)appInviteDialog:(FBSDKAppInviteDialog *)appInviteDialog didCompleteWithResults:(NSDictionary *)results {
     NSLog(@"results %@", results);
 }
@@ -99,7 +91,6 @@
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
 }
 
 @end

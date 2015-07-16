@@ -14,7 +14,7 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "E28CB2798E7D65314FF62111"
+               BlueprintIdentifier = "C5CD44515E4FF5C29EAF0E59"
                BuildableName = "libPods-InviteFriendsToMyApp.a"
                BlueprintName = "Pods-InviteFriendsToMyApp"
                ReferencedContainer = "container:Pods.xcodeproj">

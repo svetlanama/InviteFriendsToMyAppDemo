@@ -16,6 +16,7 @@
 		EA1937E41B2CE04000B82039 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EA1937E31B2CE04000B82039 /* Images.xcassets */; };
 		EA1937E71B2CE04000B82039 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = EA1937E51B2CE04000B82039 /* LaunchScreen.xib */; };
 		EA1937F31B2CE04000B82039 /* InviteFriendsToMyAppTests.m in Sources */ = {isa = PBXBuildFile; fileRef = EA1937F21B2CE04000B82039 /* InviteFriendsToMyAppTests.m */; };
+		EA90CE821B3ABC7D00F575F0 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = EA90CE811B3ABC7D00F575F0 /* GoogleService-Info.plist */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +48,7 @@
 		EA1937EC1B2CE04000B82039 /* InviteFriendsToMyAppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = InviteFriendsToMyAppTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		EA1937F11B2CE04000B82039 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		EA1937F21B2CE04000B82039 /* InviteFriendsToMyAppTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = InviteFriendsToMyAppTests.m; sourceTree = "<group>"; };
+		EA90CE811B3ABC7D00F575F0 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -125,6 +127,7 @@
 		EA1937D61B2CE04000B82039 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				EA90CE811B3ABC7D00F575F0 /* GoogleService-Info.plist */,
 				EA1937D71B2CE04000B82039 /* Info.plist */,
 				EA1937D81B2CE04000B82039 /* main.m */,
 			);
@@ -231,6 +234,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				EA1937E21B2CE04000B82039 /* Main.storyboard in Resources */,
+				EA90CE821B3ABC7D00F575F0 /* GoogleService-Info.plist in Resources */,
 				EA1937E71B2CE04000B82039 /* LaunchScreen.xib in Resources */,
 				EA1937E41B2CE04000B82039 /* Images.xcassets in Resources */,
 			);
